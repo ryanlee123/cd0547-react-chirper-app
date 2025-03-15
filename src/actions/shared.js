@@ -4,6 +4,7 @@ import { receiveTweets } from "./tweets";
 import { setAuthedUser } from "./authedUser";
 import { showLoading, hideLoading } from "react-redux-loading-bar";
 
+// Simulate signed in user 
 const AUTHED_ID = "tylermcginnis";
 
 export function handleInitialData() {

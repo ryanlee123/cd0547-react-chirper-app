@@ -3,6 +3,10 @@ import Tweet from "./Tweet";
 import NewTweet from "./NewTweet";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 
+/**
+ * Dynamically change the component based on the URL 
+ * instead of clicking on a tweet
+ */
 const withRouter = (Component) => {
   const ComponentWithRouterProp = (props) => {
     let location = useLocation();

@@ -23,7 +23,8 @@ export default function tweets(state = {}, action) {
     case ADD_TWEET:
       const { tweet } = action;
 
-      let replyingTo = {};
+      // cross-referencing replier and repliee
+      let replyingTo = {}; // tweet id of replying to
       if (tweet.replyingTo !== null) {
         replyingTo = {
           [tweet.replyingTo]: {
